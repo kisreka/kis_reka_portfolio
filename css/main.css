@@ -1,0 +1,256 @@
+/*alap színek*/
+:root {
+  --fő-fehér: #f0f0f0;
+  --fő-sárga: #f4a200;
+  --fő-zöld: #405751;
+  --fő-szürke: #303841;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+*,
+{
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.8rem; /* 18px */
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--fő-fehér);
+}
+
+h1,
+h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--fő-fehér);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/*menüsáv*/
+
+.menü {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--fő-sárga);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.menü-lista {
+  display: flex;
+  margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+  .menü {
+    justify-content: center;
+  }
+
+  .menü-lista {
+    margin: 0 1rem;
+  }
+}
+
+.menü-lista a {
+  display: block;
+  font-size: 2.2rem;
+  padding: 2rem;
+}
+
+.menü-lista a:hover {
+  background: var(--fő-zöld);
+}
+
+/* kezdőlap megjelenés */
+
+.kezdőlap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+
+.kezdőlap > p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--fő-sárga);
+}
+
+/*magamról rész megjelenés*/
+
+.magamról {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--fő-zöld);
+
+}
+
+.magamról {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+  .magamról {
+    padding: 6rem 1rem;
+  }
+}
+
+
+
+/*kapcsolat rész megjelenés*/
+
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.kapcsolat{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+  background: var(--fő-szürke);
+}
+
+.kapcsolat-címsor > h2 {
+  font-size: 6rem;
+}
+
+@media (max-width: 28.75em) {
+  .kapcsolat-címsor> h2 {
+    font-size: 4rem;
+  }
+}
+
+.kapcsolat-címsor > p {
+  font-style: italic;
+}
+
+.linkek {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.részletek {
+  font-size: 2.4rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+}
+
+.részletek:hover {
+  transform: translateY(8px);
+}
+
+/*koncepció megjelenés*/
+.munkáim {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--fő-zöld);
+
+}
+
+.munkáim {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+@media (max-width: 30.625em) {
+  .munkáim {
+    padding: 6rem 1rem;
+  }
+}
+
+
+
+
+/*lábléc megjelenés*/
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space;
+  padding: 2rem;
+  background: var(--fő-szürke);
+  border-top: 4px solid var(--fő-sárga);
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+
+  }
+}
+
+
+
